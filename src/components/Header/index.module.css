@@ -1,0 +1,20 @@
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0px 70px 0px 70px 
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0px 50px 0px 5px
+}
+
+.logoContainer h1 {
+  padding-left: 5px
+}
+
+
