@@ -1,15 +1,14 @@
 /* Banner.module.css */
-.bannerContainer {
+.container {
+  display: grid;
+  place-items: center;
   position: relative;
-  height: 300px; /* Altura do banner ajustável */
+  height: 300px; 
   overflow: hidden;
 }
 
-.bannerImage {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-position:center;
-  background-size: cover;
-  filter: blur(3px); /* Aplicando o efeito de desfoque */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

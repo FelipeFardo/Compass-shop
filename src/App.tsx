@@ -1,17 +1,21 @@
 import './App.css'
-import * as Banner from './components/Banner'
+
 import { Header } from './components/Header'
-import imgBanner from './assets/images/banner.jpeg'
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Home } from './pages/Home'
 import { Container } from './components/Container'
+
 function App() {
   return (
     <>
       <Header />
       <Container>
-        <Banner.Root>
-          <Banner.Image imageUrl={imgBanner} />
-          <Banner.Title>Shop</Banner.Title>
-        </Banner.Root>
+        <Router>
+          <Routes>
+            <Route path="/" Component={Home} />
+          </Routes>
+        </Router>
       </Container>
     </>
   )
