@@ -10,6 +10,17 @@ interface RootProps {
 function Root({ children }: RootProps) {
   return <div className={styles.container}>{children}</div>
 }
+
+// Filter Content
+
+interface ContentProps {
+  children: ReactNode
+}
+
+function Content({ children }: ContentProps) {
+  return <div className={styles.content}>{children}</div>
+}
+
 // Filter Details
 interface FilterDetailsProps {
   totalResults: number
@@ -45,4 +56,4 @@ function ItemsPerPage({ ItemsPerPage }: ItemsPerPageProps) {
   )
 }
 
-export { Root, ItemsPerPage, FilterDetails }
+export { Root, ItemsPerPage, FilterDetails, Content }

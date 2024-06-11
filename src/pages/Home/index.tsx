@@ -23,12 +23,14 @@ export function Home() {
         </Banner.Content>
       </Banner.Root>
       <FilterComponent.Root>
-        <FilterComponent.FilterDetails
-          totalResults={32}
-          finish={16}
-          initialResult={1}
-        />
-        <FilterComponent.ItemsPerPage ItemsPerPage={16} />
+        <FilterComponent.Content>
+          <FilterComponent.FilterDetails
+            totalResults={32}
+            finish={16}
+            initialResult={1}
+          />
+          <FilterComponent.ItemsPerPage ItemsPerPage={16} />
+        </FilterComponent.Content>
       </FilterComponent.Root>
       <ColletionProducts products={products} />
       <Pagination.Root>

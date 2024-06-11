@@ -1,11 +1,15 @@
 .container {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   height: 100px;
   align-items: center;
   background-color: #F9F1E7;
-  padding: 0px 98px 0px 98px;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .filter {
