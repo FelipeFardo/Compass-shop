@@ -3,8 +3,10 @@ import vectorIcon from '../../assets/icons/vector.svg'
 import imgBanner from '../../assets/images/banner.jpeg'
 import * as FilterComponent from '../../components/FilterComponent'
 import { ColletionProducts } from '../../components/Product/ListProducts'
+import { getProducts } from '../../http/get-products'
 
 export function Home() {
+  const products = getProducts()
   return (
     <section>
       <Banner.Root>
@@ -27,8 +29,7 @@ export function Home() {
         />
         <FilterComponent.ItemsPerPage ItemsPerPage={16} />
       </FilterComponent.Root>
-
-      <ColletionProducts />
+      <ColletionProducts products={products} />
     </section>
   )
 }
