@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+  gap: 30px;
+  background-color:#FAF3EA;
+  min-height: 270px;
+  padding: 50px;
+  margin-top: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+
+.title {
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-weight: 500;
+  fonts-size: 0.5rem;
+  color: #898989;
+}
