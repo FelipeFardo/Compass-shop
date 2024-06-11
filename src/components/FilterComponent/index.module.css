@@ -21,7 +21,8 @@
 
 .separator {
   height: 100%;
-  padding-left: 1rem;
+  padding-left: 8px;
   height: 100%;
-  border-left: 1px solid #9F9F9F; /* Apenas para visualização */
+  border-left: 1px solid #9F9F9F;
+   /* Apenas para visualização */
 }
