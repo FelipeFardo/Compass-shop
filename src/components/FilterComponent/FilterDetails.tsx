@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import filterIcon from '../../../assets/icons/system-uicons:filtering.svg'
+import filterIcon from '../../assets/icons/system-uicons:filtering.svg'
 
 interface FilterDetailsProps {
   totalResults: number

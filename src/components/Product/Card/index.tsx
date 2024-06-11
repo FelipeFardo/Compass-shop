@@ -8,7 +8,8 @@ import { Title } from './Title'
 import { Content } from './Content'
 import { PriceOld } from './PriceOld'
 import { ContentPrice } from './ContentPrice'
-import { DiscountProduct, NewProduct } from './BadgeDiscountProduct'
+import { DiscountProduct } from './BadgeDiscountProduct'
+import { NewProduct } from './BadgeNewProduct'
 interface RootProps {
   children: ReactNode
 }

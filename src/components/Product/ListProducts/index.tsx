@@ -51,6 +51,48 @@ export function ColletionProducts() {
           <ProductCard.Title name="Syltherine" />
         </ProductCard.Content>
       </ProductCard.Root>
+      <ProductCard.Root>
+        <ProductCard.Image url={productImage}></ProductCard.Image>
+        <ProductCard.Content>
+          <ProductCard.Title name="Syltherine" />
+        </ProductCard.Content>
+      </ProductCard.Root>
+      <ProductCard.Root>
+        <ProductCard.Image url={productImage}></ProductCard.Image>
+        <ProductCard.Content>
+          <ProductCard.Title name="Syltherine" />
+        </ProductCard.Content>
+      </ProductCard.Root>
+      <ProductCard.Root>
+        <ProductCard.Image url={productImage}></ProductCard.Image>
+        <ProductCard.Content>
+          <ProductCard.Title name="Syltherine" />
+        </ProductCard.Content>
+      </ProductCard.Root>
+      <ProductCard.Root>
+        <ProductCard.Image url={productImage}></ProductCard.Image>
+        <ProductCard.Content>
+          <ProductCard.Title name="Syltherine" />
+        </ProductCard.Content>
+      </ProductCard.Root>
+      <ProductCard.Root>
+        <ProductCard.Image url={productImage}></ProductCard.Image>
+        <ProductCard.Content>
+          <ProductCard.Title name="Syltherine" />
+        </ProductCard.Content>
+      </ProductCard.Root>
+      <ProductCard.Root>
+        <ProductCard.Image url={productImage}></ProductCard.Image>
+        <ProductCard.Content>
+          <ProductCard.Title name="Syltherine" />
+        </ProductCard.Content>
+      </ProductCard.Root>
+      <ProductCard.Root>
+        <ProductCard.Image url={productImage}></ProductCard.Image>
+        <ProductCard.Content>
+          <ProductCard.Title name="Syltherine" />
+        </ProductCard.Content>
+      </ProductCard.Root>
     </div>
   )
 }
