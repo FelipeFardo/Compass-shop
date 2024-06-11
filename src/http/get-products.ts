@@ -44,7 +44,7 @@ function getRandomElement<T>(items: T[]): T {
 
 export function getProducts(): Product[] {
   const products = []
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 28; i++) {
     const elements = [product01, product02, product03, product04]
     const randomElement = getRandomElement(elements)
     products.push({
