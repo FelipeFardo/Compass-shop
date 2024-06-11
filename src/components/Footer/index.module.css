@@ -18,11 +18,13 @@
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 30px; 
 }
 
 .nav span {
   color: #9F9F9F;
+  font-size: 1.1rem;
+
 }
 
 .copyright {
@@ -50,10 +52,28 @@
 }
 
 .inputContainer button {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #000;
   font-size: 1rem;
   padding-bottom: 5px;
   font-size: 0.9rem;
+}
+
+.inputContainer input:focus {
+  outline: none;
+  box-shadow: none; 
+}
+
+.inputContainer button:disabled {
+  cursor: not-allowed;
+}
+
+
+.msgError {
+  position: relative;
+  top: -20px;
+  font-size: 0.8rem;
+  color: red;
 }

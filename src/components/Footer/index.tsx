@@ -1,5 +1,14 @@
+import { useState } from 'react'
 import styles from './index.module.css'
+import { validEmail } from '../../utils/validEmail'
 export function Footer() {
+  const [email, setEmail] = useState('')
+
+  let emailErrorMsg = 'Digite um email válido'
+  const emailValid = validEmail(email)
+
+  if (emailValid || !email) emailErrorMsg = ''
+
   return (
     <footer className={styles.container}>
       <div className={styles.nav}>
@@ -28,12 +37,15 @@ export function Footer() {
         <span>Newsletter</span>
         <div className={styles.inputContainer}>
           <input
-            type="email"
+            type="text"
             name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter Your Email Address"
           />
-          <button>SUBSCRIBE</button>
+          <button disabled={!emailValid}>SUBSCRIBE</button>
         </div>
+        <p className={styles.msgError}>{emailErrorMsg}</p>
       </div>
       <div className={styles.copyright}>
         <span>2024 Compass UOL</span>
