@@ -10,6 +10,8 @@ import trophyIcon from './assets/icons/trophy.svg'
 import guaranteeIcon from './assets/icons/guarantee.svg'
 import shippignIcon from './assets/icons/shippign.svg'
 import customerSupportIcon from './assets/icons/custumer-support.svg'
+
+import { Footer } from './components/Footer'
 function App() {
   return (
     <>
@@ -34,9 +36,11 @@ function App() {
         <BannerCertificates.Card>
           <BannerCertificates.Icon src={guaranteeIcon} />
           <BannerCertificates.Content>
-            <BannerCertificates.Title>High Quality</BannerCertificates.Title>
+            <BannerCertificates.Title>
+              Warranty Protection
+            </BannerCertificates.Title>
             <BannerCertificates.Description>
-              crafted from top materials
+              Over 2 years
             </BannerCertificates.Description>
           </BannerCertificates.Content>
         </BannerCertificates.Card>
@@ -59,6 +63,7 @@ function App() {
           </BannerCertificates.Content>
         </BannerCertificates.Card>
       </BannerCertificates.Root>
+      <Footer />
     </>
   )
 }
