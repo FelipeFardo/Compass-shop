@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Image } from './Image'
+import { Image } from '../Image'
 import { Title } from './Title'
 
 import styles from './index.module.css'
