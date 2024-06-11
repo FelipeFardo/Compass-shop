@@ -7,6 +7,9 @@ import { Home } from './pages/Home'
 import { Container } from './components/Container'
 import * as BannerCertificates from './components/BannerCertificates'
 import trophyIcon from './assets/icons/trophy.svg'
+import guaranteeIcon from './assets/icons/guarantee.svg'
+import shippignIcon from './assets/icons/shippign.svg'
+import customerSupportIcon from './assets/icons/custumer-support.svg'
 function App() {
   return (
     <>
@@ -29,7 +32,7 @@ function App() {
           </BannerCertificates.Content>
         </BannerCertificates.Card>
         <BannerCertificates.Card>
-          <BannerCertificates.Icon src={trophyIcon} />
+          <BannerCertificates.Icon src={guaranteeIcon} />
           <BannerCertificates.Content>
             <BannerCertificates.Title>High Quality</BannerCertificates.Title>
             <BannerCertificates.Description>
@@ -38,20 +41,20 @@ function App() {
           </BannerCertificates.Content>
         </BannerCertificates.Card>
         <BannerCertificates.Card>
-          <BannerCertificates.Icon src={trophyIcon} />
+          <BannerCertificates.Icon src={shippignIcon} />
           <BannerCertificates.Content>
-            <BannerCertificates.Title>High Quality</BannerCertificates.Title>
+            <BannerCertificates.Title>Free Shipping</BannerCertificates.Title>
             <BannerCertificates.Description>
-              crafted from top materials
+              Order over 150 $
             </BannerCertificates.Description>
           </BannerCertificates.Content>
         </BannerCertificates.Card>
         <BannerCertificates.Card>
-          <BannerCertificates.Icon src={trophyIcon} />
+          <BannerCertificates.Icon src={customerSupportIcon} />
           <BannerCertificates.Content>
-            <BannerCertificates.Title>High Quality</BannerCertificates.Title>
+            <BannerCertificates.Title>24 / 7 Support</BannerCertificates.Title>
             <BannerCertificates.Description>
-              crafted from top materials
+              Dedicated support
             </BannerCertificates.Description>
           </BannerCertificates.Content>
         </BannerCertificates.Card>
