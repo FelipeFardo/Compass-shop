@@ -2,10 +2,11 @@ import * as Banner from '../../components/Banner'
 import vectorIcon from '../../assets/icons/vector.svg'
 import imgBanner from '../../assets/images/banner.jpeg'
 import * as FilterComponent from '../../components/FilterComponent'
+import { ColletionProducts } from '../../components/Product/ListProducts'
 
 export function Home() {
   return (
-    <>
+    <section>
       <Banner.Root>
         <Banner.Image imageUrl={imgBanner} />
         <Banner.Content>
@@ -26,6 +27,8 @@ export function Home() {
         />
         <FilterComponent.ItemsPerPage ItemsPerPage={16} />
       </FilterComponent.Root>
-    </>
+
+      <ColletionProducts />
+    </section>
   )
 }
