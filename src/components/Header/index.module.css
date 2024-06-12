@@ -1,4 +1,4 @@
-.header {
+.menu {
   height: 100px;
   display: flex;
   justify-content: space-between; 
@@ -6,11 +6,65 @@
   padding: 0px 70px 0px 70px
 }
 
-.logo {
-  padding-right: 90px
-}
-
-.nav {
+.section {
   display: flex;
   gap: 10px
+}
+
+.menuMobile {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 30px 0 ;
+    padding: 0px 70px 0px 70px;
+    gap: 30px;
+}
+
+.navToggle span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+@media (max-width: 1200px) {
+    .menu .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .menu {
+        display: none;
+    }
+
+    .menuMobile {
+        display: flex;
+    } 
+
+    .menuMobile .section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.menu.active {
+    display: flex;
+}
+
+
+.menuToggle {
+    cursor: pointer;
+}
+
+.buttonToggle {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: none;
+    background: #FFF;
 }
