@@ -1,0 +1,12 @@
+.space::before {
+  content: "\00a0 \00a0";
+  
+}
+
+.space::after{
+  content: "\00a0 \00a0";
+}
+
+.strong {
+  font-weight: bold;
+}

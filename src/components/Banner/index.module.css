@@ -25,15 +25,6 @@
   height: 100%;
 }
 
-.description span {
-  font-weight: 500
-
-}
-
-.description span::after{
-  content: "\00a0";
-}
-
 .image {
   position: absolute;
   width: 100%;

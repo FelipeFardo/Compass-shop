@@ -5,6 +5,7 @@ import * as FilterComponent from '../../components/FilterComponent'
 import { ColletionProducts } from '../../components/Product/ListProducts'
 import { getProducts } from '../../http/get-products'
 import * as Pagination from '../../components/Pagination'
+import styles from './index.module.css'
 
 export function Home() {
   const products = getProducts()
@@ -15,10 +16,13 @@ export function Home() {
         <Banner.Content>
           <Banner.Title>Shop</Banner.Title>
           <Banner.Description>
-            <span>
-              Home <img src={vectorIcon} alt="#" />
-            </span>
-            Shop
+            <span className={`${styles.space} ${styles.strong}`}> Home </span>
+            <img
+              src={vectorIcon}
+              alt="#"
+              className={`${styles.icon} ${styles.strong}`}
+            />
+            <span className={styles.space}> Shop </span>
           </Banner.Description>
         </Banner.Content>
       </Banner.Root>
