@@ -6,8 +6,22 @@ import { ColletionProducts } from '../../components/Product/ListProducts'
 import { getProducts } from '../../http/get-products'
 import * as Pagination from '../../components/Pagination'
 import styles from './index.module.css'
+import { useState } from 'react'
+
+export type Filters =
+  | 'default'
+  | 'price-asc'
+  | 'price-desc'
+  | 'name-asc'
+  | 'name-desc'
 
 export function Home() {
+  const [filter, setFilter] = useState<Filters>('default')
+
+  const handleFilterChange = (filter: Filters) => {
+    setFilter(filter)
+  }
+
   const products = getProducts()
   return (
     <section>
@@ -32,6 +46,8 @@ export function Home() {
             totalResults={32}
             finish={16}
             initialResult={1}
+            filter={filter}
+            setFilter={handleFilterChange}
           />
           <FilterComponent.ItemsPerPage ItemsPerPage={16} />
         </FilterComponent.Content>
