@@ -16,16 +16,17 @@ function getRandomElement<T>(items: T[]): T {
   return items[randomIndex]
 }
 
+const elements = [
+  productImage01,
+  productImage02,
+  productImage03,
+  productImage04,
+]
+
 export function ColletionProducts({ products }: ColletionProductsProps) {
   return (
     <div className={styles.container}>
       {products.map((product) => {
-        const elements = [
-          productImage01,
-          productImage02,
-          productImage03,
-          productImage04,
-        ]
         const randomElement = getRandomElement(elements)
         return (
           <ProductCard.Root key={product.id}>
