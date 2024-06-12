@@ -6,7 +6,7 @@ interface TitleProps {
 }
 
 function Title({ children }: TitleProps) {
-  return <h4 className={styles.title}>{children}</h4>
+  return <h3 className={styles.title}>{children}</h3>
 }
 
 interface DescriptionProps {
