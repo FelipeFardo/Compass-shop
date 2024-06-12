@@ -2,7 +2,6 @@ import './App.css'
 
 import { Header } from './components/Header'
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Container } from './components/Container'
 import * as BannerCertificates from './components/BannerCertificates'
@@ -17,11 +16,7 @@ function App() {
     <>
       <Header />
       <Container>
-        <Router>
-          <Routes>
-            <Route path="/" Component={Home} />
-          </Routes>
-        </Router>
+        <Home />
       </Container>
       <BannerCertificates.Root>
         <BannerCertificates.Card>
