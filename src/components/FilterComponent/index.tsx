@@ -89,12 +89,22 @@ function FilterDetails({
 
 // items Per Page
 interface ItemsPerPageProps {
-  ItemsPerPage: number
+  itemsPerPage: number
+  setItensPerPage: (value: number) => void
 }
-function ItemsPerPage({ ItemsPerPage }: ItemsPerPageProps) {
+function ItemsPerPage({ itemsPerPage, setItensPerPage }: ItemsPerPageProps) {
   return (
-    <div>
-      Show <span>{ItemsPerPage}</span>
+    <div className={styles.itemsPerPage}>
+      <div className={styles.containerInput}>
+        Show{' '}
+        <input
+          type="number"
+          min={10}
+          max={40}
+          value={itemsPerPage}
+          onChange={(e) => setItensPerPage(Number(e.target.value))}
+        />
+      </div>
     </div>
   )
 }

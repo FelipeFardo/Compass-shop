@@ -17,6 +17,8 @@ export type Filters =
 
 export function Home() {
   const [filter, setFilter] = useState<Filters>('default')
+  const [pageIndex, setPageIndex] = useState(1)
+  const [itensPerPage, setItensPerPage] = useState(20)
 
   const handleFilterChange = (filter: Filters) => {
     setFilter(filter)
@@ -45,19 +47,38 @@ export function Home() {
           <FilterComponent.FilterDetails
             totalResults={32}
             finish={16}
-            initialResult={1}
+            initialResult={pageIndex}
             filter={filter}
             setFilter={handleFilterChange}
           />
-          <FilterComponent.ItemsPerPage ItemsPerPage={16} />
+          <FilterComponent.ItemsPerPage
+            setItensPerPage={setItensPerPage}
+            itemsPerPage={itensPerPage}
+          />
         </FilterComponent.Content>
       </FilterComponent.Root>
       <ColletionProducts products={products} />
       <Pagination.Root>
-        <Pagination.Button active={true}>1</Pagination.Button>
-        <Pagination.Button>2</Pagination.Button>
-        <Pagination.Button>3</Pagination.Button>
-        <Pagination.Next />
+        {pageIndex === 1}
+        <Pagination.Button
+          disabled={pageIndex === 1}
+          active={pageIndex === 1}
+          onClick={() => setPageIndex(pageIndex - 1)}
+        >
+          {String(pageIndex - 1 ?? 1)}
+        </Pagination.Button>
+        <Pagination.Button
+          active={pageIndex !== 1}
+          onClick={() =>
+            setPageIndex(pageIndex === 1 ? pageIndex + 1 : pageIndex)
+          }
+        >
+          {String(pageIndex)}
+        </Pagination.Button>
+        <Pagination.Button onClick={() => setPageIndex(pageIndex + 1)}>
+          {String(pageIndex + 1)}
+        </Pagination.Button>
+        <Pagination.Next onClick={() => setPageIndex(pageIndex + 1)} />
       </Pagination.Root>
     </section>
   )
