@@ -48,7 +48,7 @@ function Menu() {
 function Newsletter() {
   const [email, setEmail] = useState('')
 
-  let emailErrorMsg = 'Digite um email válido'
+  let emailErrorMsg = 'Please enter a valid email address'
   const emailValid = validEmail(email)
 
   if (emailValid || !email) emailErrorMsg = ''
