@@ -93,15 +93,21 @@ export function Home() {
           {String(pageIndex - 1 ? pageIndex - 1 : 0)}
         </Pagination.Button>
         <Pagination.Button
-          active={pageIndex !== 1}
-          disabled={finished}
+          active={pageIndex !== 1 && !finished}
           onClick={() =>
-            setPageIndex(pageIndex === 1 ? pageIndex + 1 : pageIndex)
+            setPageIndex(
+              pageIndex === 1
+                ? pageIndex + 1
+                : finished
+                  ? pageIndex - 1
+                  : pageIndex,
+            )
           }
         >
           {String(pageIndex)}
         </Pagination.Button>
         <Pagination.Button
+          active={finished}
           disabled={finished}
           onClick={() => setPageIndex(pageIndex + 1)}
         >
