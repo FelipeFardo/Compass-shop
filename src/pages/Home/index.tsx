@@ -6,7 +6,8 @@ import { ColletionProducts } from '../../components/Product/ListProducts'
 import { getProducts } from '../../http/get-products'
 import * as Pagination from '../../components/Pagination'
 import styles from './index.module.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import type { Product } from '../../@types/product'
 
 export type Filters =
   | 'default'
@@ -16,15 +17,35 @@ export type Filters =
   | 'name-desc'
 
 export function Home() {
+  const [products, setProducts] = useState<Product[]>([])
   const [filter, setFilter] = useState<Filters>('default')
   const [pageIndex, setPageIndex] = useState(1)
+  const [finished, setFinished] = useState(false)
   const [itensPerPage, setItensPerPage] = useState(20)
+  const [maxResults, setMaxResults] = useState(0)
+  const [startResults, setStartResults] = useState(0)
 
   const handleFilterChange = (filter: Filters) => {
     setFilter(filter)
   }
 
-  const products = getProducts()
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await getProducts({
+        filter,
+        itensPerPage,
+        pageIndex,
+      })
+      setProducts(response.products)
+
+      setStartResults(response.startResults)
+      setMaxResults(response.maxResults)
+
+      setFinished(response.finished)
+    }
+    fetchData()
+  }, [filter, pageIndex, itensPerPage])
+
   return (
     <section>
       <Banner.Root>
@@ -45,9 +66,9 @@ export function Home() {
       <FilterComponent.Root>
         <FilterComponent.Content>
           <FilterComponent.FilterDetails
-            totalResults={32}
-            finish={16}
-            initialResult={pageIndex}
+            totalResults={maxResults}
+            finish={startResults + products.length - 1}
+            initialResult={startResults}
             filter={filter}
             setFilter={handleFilterChange}
           />
@@ -69,16 +90,23 @@ export function Home() {
         </Pagination.Button>
         <Pagination.Button
           active={pageIndex !== 1}
+          disabled={finished}
           onClick={() =>
             setPageIndex(pageIndex === 1 ? pageIndex + 1 : pageIndex)
           }
         >
           {String(pageIndex)}
         </Pagination.Button>
-        <Pagination.Button onClick={() => setPageIndex(pageIndex + 1)}>
+        <Pagination.Button
+          disabled={finished}
+          onClick={() => setPageIndex(pageIndex + 1)}
+        >
           {String(pageIndex + 1)}
         </Pagination.Button>
-        <Pagination.Next onClick={() => setPageIndex(pageIndex + 1)} />
+        <Pagination.Next
+          disabled={finished}
+          onClick={() => setPageIndex(pageIndex + 1)}
+        />
       </Pagination.Root>
     </section>
   )

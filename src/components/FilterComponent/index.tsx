@@ -99,8 +99,8 @@ function ItemsPerPage({ itemsPerPage, setItensPerPage }: ItemsPerPageProps) {
         Show{' '}
         <input
           type="number"
-          min={10}
-          max={40}
+          min={1}
+          max={400}
           value={itemsPerPage}
           onChange={(e) => setItensPerPage(Number(e.target.value))}
         />

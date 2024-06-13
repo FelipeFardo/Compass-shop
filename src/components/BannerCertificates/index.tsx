@@ -2,11 +2,11 @@ import type { ReactNode } from 'react'
 import styles from './index.module.css'
 
 interface TitleProps {
-  children: string
+  title: string
 }
 
-function Title({ children }: TitleProps) {
-  return <h3 className={styles.title}>{children}</h3>
+function Title({ title }: TitleProps) {
+  return <h3 className={styles.title}>{title}</h3>
 }
 
 interface DescriptionProps {
@@ -26,7 +26,7 @@ interface ContentProps {
 }
 
 function Content({ children }: ContentProps) {
-  return <h4>{children}</h4>
+  return <div>{children}</div>
 }
 
 function Icon({ src }: IconProps) {

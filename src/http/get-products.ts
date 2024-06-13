@@ -1,58 +1,101 @@
 import type { Product } from '../@types/product'
+import { products as productDB } from './products'
 
-const product01: Product = {
-  id: 'produto-01',
-  name: 'Syltherine',
-  description: 'Stylish cafe chair',
-  price: 2500000,
-  priceOld: 3500000,
-  discountPrice: 30,
-  imageUrl: '../../../assets/images/product_02.png',
+export type Filters =
+  | 'default'
+  | 'price-asc'
+  | 'price-desc'
+  | 'name-asc'
+  | 'name-desc'
+
+interface getProductsParams {
+  pageIndex: number
+  filter: Filters
+  itensPerPage: number
 }
 
-const product02: Product = {
-  id: 'produto-02',
-  name: 'Leviosa',
-  description: 'Stylish cafe chair',
-  price: 2500000,
-  imageUrl: '../../../assets/images/product_02.png',
+interface getProductsResponse {
+  products: Product[]
+  itensPerPage: number
+  pageIndex: number
+  finished: boolean
+  maxResults: number
+  startResults: number
+  endResults: number
 }
 
-const product03: Product = {
-  id: 'produto-01',
-  name: 'Lolito',
-  description: 'Luxury big sofa',
-  price: 7000000,
-  priceOld: 14000000,
-  discountPrice: 50,
-  imageUrl: '../../../assets/images/product_03.png',
-}
+export async function getProducts({
+  filter,
+  itensPerPage,
+  pageIndex,
+}: getProductsParams): Promise<getProductsResponse> {
+  const products: Product[] = productDB
+  let productsFiltered: Product[] = products
+  const maxResults = products.length
+  // filtragem
 
-const product04: Product = {
-  id: 'produto-04',
-  name: 'Respira',
-  description: 'Outdoor bar table and stool',
-  price: 500000,
-  new: true,
-  imageUrl: '../../../assets/images/product_04.png',
-}
-
-function getRandomElement<T>(items: T[]): T {
-  const randomIndex = Math.floor(Math.random() * items.length)
-  return items[randomIndex]
-}
-
-export function getProducts(): Product[] {
-  const products = []
-  for (let i = 0; i < 28; i++) {
-    const elements = [product01, product02, product03, product04]
-    const randomElement = getRandomElement(elements)
-    products.push({
-      ...randomElement,
-      id: `${i}`,
-    })
+  if (filter === 'name-asc') {
+    productsFiltered = sortProductsByName(products)
+  } else if (filter === 'name-desc') {
+    productsFiltered = sortProductsDescByName(products)
+  } else if (filter === 'price-asc') {
+    productsFiltered = sortByPrice(products, 'asc')
+  } else if (filter === 'price-desc') {
+    productsFiltered = sortByPrice(products, 'desc')
   }
 
-  console.log(products)
-  return products
+  // indexação
+  const startIndex = (pageIndex - 1) * itensPerPage
+  const endIndex = startIndex + itensPerPage
+  const paginatedProducts = productsFiltered.slice(startIndex, endIndex)
+
+  const endResults = endIndex
+
+  const finished = !(maxResults > endIndex)
+  return {
+    products: paginatedProducts,
+    itensPerPage,
+    pageIndex,
+    finished,
+    maxResults,
+    endResults,
+    startResults: startIndex + 1,
+  }
+}
+
+function sortProductsByName(products: Product[]): Product[] {
+  return products.slice().sort((a, b) => {
+    const nameA = a.name.toUpperCase() // Convertendo para maiúsculas para ordenação
+    const nameB = b.name.toUpperCase()
+    if (nameA < nameB) {
+      return -1
+    }
+    if (nameA > nameB) {
+      return 1
+    }
+    return 0
+  })
+}
+
+function sortProductsDescByName(products: Product[]): Product[] {
+  return products.slice().sort((a, b) => {
+    const nameA = a.name.toUpperCase() // Convertendo para maiúsculas para ordenação
+    const nameB = b.name.toUpperCase()
+    if (nameA < nameB) {
+      return 1
+    }
+    if (nameA > nameB) {
+      return -1
+    }
+    return 0
+  })
+}
+
+function sortByPrice(
+  products: Product[],
+  order: 'asc' | 'desc' = 'asc',
+): Product[] {
+  if (order === 'desc')
+    return products.slice().sort((a, b) => b.price - a.price)
+  return products.slice().sort((a, b) => a.price - b.price)
 }

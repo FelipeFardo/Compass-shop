@@ -22,7 +22,7 @@ function App() {
         <BannerCertificates.Card>
           <BannerCertificates.Icon src={trophyIcon} />
           <BannerCertificates.Content>
-            <BannerCertificates.Title>High Quality</BannerCertificates.Title>
+            <BannerCertificates.Title title="High Quality" />
             <BannerCertificates.Description>
               crafted from top materials
             </BannerCertificates.Description>
@@ -31,9 +31,7 @@ function App() {
         <BannerCertificates.Card>
           <BannerCertificates.Icon src={guaranteeIcon} />
           <BannerCertificates.Content>
-            <BannerCertificates.Title>
-              Warranty Protection
-            </BannerCertificates.Title>
+            <BannerCertificates.Title title="Warranty Protection" />
             <BannerCertificates.Description>
               Over 2 years
             </BannerCertificates.Description>
@@ -42,7 +40,7 @@ function App() {
         <BannerCertificates.Card>
           <BannerCertificates.Icon src={shippignIcon} />
           <BannerCertificates.Content>
-            <BannerCertificates.Title>Free Shipping</BannerCertificates.Title>
+            <BannerCertificates.Title title="Free Shipping" />
             <BannerCertificates.Description>
               Order over 150 $
             </BannerCertificates.Description>
@@ -51,7 +49,7 @@ function App() {
         <BannerCertificates.Card>
           <BannerCertificates.Icon src={customerSupportIcon} />
           <BannerCertificates.Content>
-            <BannerCertificates.Title>24 / 7 Support</BannerCertificates.Title>
+            <BannerCertificates.Title title="24 / 7 Support" />
             <BannerCertificates.Description>
               Dedicated support
             </BannerCertificates.Description>
