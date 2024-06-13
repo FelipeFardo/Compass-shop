@@ -53,7 +53,7 @@ export function Home() {
   return (
     <section>
       <Banner.Root>
-        <Banner.Image imageUrl="/images/banner.jpeg" />
+        <Banner.Image imageUrl="images/banner.jpeg" />
         <Banner.Content>
           <Banner.Title>Shop</Banner.Title>
           <Banner.Description>
