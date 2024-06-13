@@ -10,6 +10,7 @@ import { PriceOld } from './PriceOld'
 import { ContentPrice } from './ContentPrice'
 import { DiscountProduct } from './BadgeDiscountProduct'
 import { NewProduct } from './BadgeNewProduct'
+import { CardHover } from './CardHover'
 
 interface RootProps {
   children: ReactNode
@@ -30,4 +31,5 @@ export {
   ContentPrice,
   DiscountProduct,
   NewProduct,
+  CardHover,
 }

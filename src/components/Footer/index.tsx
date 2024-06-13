@@ -30,16 +30,16 @@ function Menu() {
     <div className={styles.menuContainer}>
       <div className={styles.nav}>
         <span>Links</span>
-        <a>Home</a>
-        <a>Shop</a>
-        <a>About</a>
-        <a>Contact</a>
+        <a className={styles.btn}>Home</a>
+        <a className={styles.btn}>Shop</a>
+        <a className={styles.btn}>About</a>
+        <a className={styles.btn}>Contact</a>
       </div>
       <div className={styles.nav}>
         <span>Help</span>
-        <a>Payment Options</a>
-        <a>Returns</a>
-        <a>Privacy Policies</a>
+        <a className={styles.btn}>Payment Options</a>
+        <a className={styles.btn}>Returns</a>
+        <a className={styles.btn}>Privacy Policies</a>
       </div>
     </div>
   )

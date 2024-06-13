@@ -13,6 +13,7 @@ export function ColletionProducts({ products }: ColletionProductsProps) {
       {products.map((product) => {
         return (
           <ProductCard.Root key={product.id}>
+            <ProductCard.CardHover />
             {product.discountPrice && (
               <ProductCard.DiscountProduct percentual={product.discountPrice} />
             )}
