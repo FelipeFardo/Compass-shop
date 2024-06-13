@@ -29,6 +29,11 @@ export function Home() {
     setFilter(filter)
   }
 
+  const handleFunctionItensPerPage = (value: number) => {
+    const itensPerPage = maxResults > value ? value : maxResults
+    setItensPerPage(itensPerPage)
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await getProducts({
@@ -73,7 +78,7 @@ export function Home() {
             setFilter={handleFilterChange}
           />
           <FilterComponent.ItemsPerPage
-            setItensPerPage={setItensPerPage}
+            setItensPerPage={handleFunctionItensPerPage}
             itemsPerPage={itensPerPage}
           />
         </FilterComponent.Content>

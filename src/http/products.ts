@@ -23,7 +23,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '3',
@@ -32,7 +32,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '4',
@@ -72,7 +72,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '9',
@@ -90,7 +90,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '11',
@@ -136,7 +136,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '17',
@@ -145,7 +145,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '18',
@@ -170,7 +170,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '21',
@@ -228,7 +228,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '28',
@@ -305,7 +305,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '37',
@@ -346,7 +346,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '42',
@@ -362,7 +362,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '44',
@@ -380,7 +380,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '46',
@@ -429,7 +429,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '52',
@@ -445,7 +445,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '54',
@@ -468,7 +468,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '57',
@@ -532,7 +532,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '65',
@@ -541,7 +541,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '66',
@@ -665,7 +665,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '81',
@@ -674,7 +674,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '82',
@@ -690,7 +690,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '84',
@@ -699,7 +699,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '85',
@@ -739,7 +739,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '90',
@@ -748,7 +748,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '91',
@@ -766,7 +766,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '93',
@@ -799,7 +799,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: '/src/assets/images/product_01.png',
   },
   {
     id: '97',
