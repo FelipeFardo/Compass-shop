@@ -59,7 +59,7 @@ export function Home() {
           <Banner.Description>
             <span className={`${styles.space} ${styles.strong}`}> Home </span>
             <img
-              src="/icons/vector.svg"
+              src="icons/vector.svg"
               alt="#"
               className={`${styles.icon} ${styles.strong}`}
             />

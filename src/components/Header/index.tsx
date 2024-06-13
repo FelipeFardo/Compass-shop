@@ -22,7 +22,7 @@ function MenuMobile() {
         onClick={() => setMenuMobile((state) => !state)}
         className={styles.buttonToggle}
       >
-        <img height={41} src="/icons/toggleMenu.svg" alt="menu" />
+        <img height={41} src="icons/toggleMenu.svg" alt="menu" />
       </button>
       {menuMobile && <MenuContainer />}
     </div>
@@ -53,16 +53,16 @@ function MenuContainer() {
       </section>
       <section className={`${styles.section} ${styles.containerIconsMobile}`}>
         <Button>
-          <img src="/icons/mdi:account-alert-outline.svg" alt="#" />
+          <img src="icons/mdi:account-alert-outline.svg" alt="#" />
         </Button>
         <Button>
-          <img src="/icons/akar-icons:search.svg" alt="#" />
+          <img src="icons/akar-icons:search.svg" alt="#" />
         </Button>
         <Button>
-          <img src="/icons/akar-icons:heart.svg" alt="#" />
+          <img src="icons/akar-icons:heart.svg" alt="#" />
         </Button>
         <Button>
-          <img src="/icons/ant-design:shopping-cart-outlined.svg" alt="#" />
+          <img src="icons/ant-design:shopping-cart-outlined.svg" alt="#" />
         </Button>
       </section>
     </>

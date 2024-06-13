@@ -62,7 +62,7 @@ function FilterDetails({
       <div className={styles.filter}>
         <label htmlFor="filter-select">
           <img
-            src="/icons/system-uicons:filtering.svg"
+            src="icons/system-uicons:filtering.svg"
             alt=""
             className={styles.filterIcon}
           />

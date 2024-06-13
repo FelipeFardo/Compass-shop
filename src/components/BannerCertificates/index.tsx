@@ -53,28 +53,28 @@ function BannerCertificates() {
   return (
     <Root>
       <Card>
-        <Icon src="/icons/trophy.svg" />
+        <Icon src="icons/trophy.svg" />
         <Content>
           <Title title="High Quality" />
           <Description>crafted from top materials</Description>
         </Content>
       </Card>
       <Card>
-        <Icon src="/icons/guarantee.svg" />
+        <Icon src="icons/guarantee.svg" />
         <Content>
           <Title title="Warranty Protection" />
           <Description>Over 2 years</Description>
         </Content>
       </Card>
       <Card>
-        <Icon src="/icons/shippign.svg" />
+        <Icon src="icons/shippign.svg" />
         <Content>
           <Title title="Free Shipping" />
           <Description>Order over 150 $</Description>
         </Content>
       </Card>
       <Card>
-        <Icon src="/icons/custumer-support.svg" />
+        <Icon src="icons/custumer-support.svg" />
         <Content>
           <Title title="24 / 7 Support" />
           <Description>Dedicated support</Description>
