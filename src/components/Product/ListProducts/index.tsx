@@ -2,7 +2,6 @@ import * as ProductCard from '../Card'
 
 import styles from './index.module.css'
 import type { Product } from '../../../@types/product'
-
 interface ColletionProductsProps {
   products: Product[]
 }
@@ -18,7 +17,11 @@ export function ColletionProducts({ products }: ColletionProductsProps) {
               <ProductCard.DiscountProduct percentual={product.discountPrice} />
             )}
             {product.new && !product.priceOld && <ProductCard.NewProduct />}
-            <ProductCard.Image url={product.imageUrl} alt="" />
+            <ProductCard.Image
+              url={`src/assets/images/${product.imageUrl}`}
+              alt="Imagem"
+            />
+
             <ProductCard.Content>
               <ProductCard.Title name={product.name} />
               <ProductCard.Description>

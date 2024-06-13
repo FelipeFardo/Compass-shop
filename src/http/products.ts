@@ -5,7 +5,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '1',
@@ -14,7 +14,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '2',
@@ -23,7 +23,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '3',
@@ -32,7 +32,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '4',
@@ -40,7 +40,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '5',
@@ -48,7 +48,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '6',
@@ -56,14 +56,14 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '7',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '8',
@@ -72,7 +72,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '9',
@@ -81,7 +81,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '10',
@@ -90,14 +90,14 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '11',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '12',
@@ -105,7 +105,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '13',
@@ -113,21 +113,21 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '14',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '15',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '16',
@@ -136,7 +136,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '17',
@@ -145,14 +145,14 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '18',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '19',
@@ -161,7 +161,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '20',
@@ -170,14 +170,14 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '21',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '22',
@@ -186,7 +186,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '23',
@@ -194,7 +194,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '24',
@@ -203,7 +203,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '25',
@@ -212,14 +212,14 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '26',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '27',
@@ -228,7 +228,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '28',
@@ -236,7 +236,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '29',
@@ -244,7 +244,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '30',
@@ -252,7 +252,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '31',
@@ -261,7 +261,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '32',
@@ -270,7 +270,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '33',
@@ -279,7 +279,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '34',
@@ -288,7 +288,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '35',
@@ -296,7 +296,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '36',
@@ -305,7 +305,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '37',
@@ -313,7 +313,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '38',
@@ -322,14 +322,14 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '39',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '40',
@@ -337,7 +337,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '41',
@@ -346,14 +346,14 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '42',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '43',
@@ -362,7 +362,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '44',
@@ -371,7 +371,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '45',
@@ -380,7 +380,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '46',
@@ -388,14 +388,14 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '47',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '48',
@@ -404,7 +404,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '49',
@@ -412,7 +412,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '50',
@@ -420,7 +420,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '51',
@@ -429,14 +429,14 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '52',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '53',
@@ -445,21 +445,21 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '54',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '55',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '56',
@@ -468,14 +468,14 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '57',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '58',
@@ -484,21 +484,21 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '59',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '60',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '61',
@@ -507,14 +507,14 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '62',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '63',
@@ -523,7 +523,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '64',
@@ -532,7 +532,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '65',
@@ -541,7 +541,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '66',
@@ -549,7 +549,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '67',
@@ -558,14 +558,14 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '68',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '69',
@@ -574,7 +574,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '70',
@@ -583,7 +583,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '71',
@@ -592,14 +592,14 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '72',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '73',
@@ -608,14 +608,14 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '74',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '75',
@@ -624,7 +624,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '76',
@@ -632,7 +632,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '77',
@@ -640,7 +640,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '78',
@@ -648,7 +648,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '79',
@@ -656,7 +656,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '80',
@@ -665,7 +665,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '81',
@@ -674,14 +674,14 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '82',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '83',
@@ -690,7 +690,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '84',
@@ -699,7 +699,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '85',
@@ -707,14 +707,14 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '86',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '87',
@@ -722,7 +722,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '88',
@@ -730,7 +730,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '89',
@@ -739,7 +739,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '90',
@@ -748,7 +748,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '91',
@@ -757,7 +757,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '92',
@@ -766,14 +766,14 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '93',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '94',
@@ -781,7 +781,7 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
   {
     id: '95',
@@ -790,7 +790,7 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '96',
@@ -799,7 +799,7 @@ export const productDB = [
     price: 2500000,
     priceOld: 3500000,
     discountPrice: 30,
-    imageUrl: '/src/assets/images/product_01.png',
+    imageUrl: 'product_01.png',
   },
   {
     id: '97',
@@ -808,14 +808,14 @@ export const productDB = [
     price: 7000000,
     priceOld: 14000000,
     discountPrice: 50,
-    imageUrl: '/src/assets/images/product_03.png',
+    imageUrl: 'product_03.png',
   },
   {
     id: '98',
     name: 'Leviosa',
     description: 'Stylish cafe chair',
     price: 2500000,
-    imageUrl: '/src/assets/images/product_02.png',
+    imageUrl: 'product_02.png',
   },
   {
     id: '99',
@@ -823,6 +823,6 @@ export const productDB = [
     description: 'Outdoor bar table and stool',
     price: 500000,
     new: true,
-    imageUrl: '/src/assets/images/product_04.png',
+    imageUrl: 'product_04.png',
   },
 ]
