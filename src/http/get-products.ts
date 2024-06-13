@@ -1,5 +1,5 @@
 import type { Product } from '../@types/product'
-import { products as productDB } from './products'
+import { productDB } from './products'
 
 export type Filters =
   | 'default'
@@ -8,7 +8,7 @@ export type Filters =
   | 'name-asc'
   | 'name-desc'
 
-interface getProductsParams {
+interface getProductsRequest {
   pageIndex: number
   filter: Filters
   itensPerPage: number
@@ -28,12 +28,37 @@ export async function getProducts({
   filter,
   itensPerPage,
   pageIndex,
-}: getProductsParams): Promise<getProductsResponse> {
+}: getProductsRequest): Promise<getProductsResponse> {
   const products: Product[] = productDB
-  let productsFiltered: Product[] = products
   const maxResults = products.length
-  // filtragem
 
+  // filter
+  const productsFiltered = filterProducts(products, filter)
+
+  const paginatedProducts = pagination(
+    productsFiltered,
+    pageIndex,
+    itensPerPage,
+  )
+  // indexação
+  const startIndex = (pageIndex - 1) * itensPerPage
+  const endIndex = startIndex + itensPerPage
+  const endResults = endIndex
+  const finished = !(maxResults > endIndex)
+
+  return {
+    products: paginatedProducts,
+    itensPerPage,
+    pageIndex,
+    finished,
+    maxResults,
+    endResults,
+    startResults: startIndex + 1,
+  }
+}
+
+function filterProducts(products: Product[], filter: Filters): Product[] {
+  let productsFiltered: Product[] = products
   if (filter === 'name-asc') {
     productsFiltered = sortProductsByName(products)
   } else if (filter === 'name-desc') {
@@ -44,23 +69,7 @@ export async function getProducts({
     productsFiltered = sortByPrice(products, 'desc')
   }
 
-  // indexação
-  const startIndex = (pageIndex - 1) * itensPerPage
-  const endIndex = startIndex + itensPerPage
-  const paginatedProducts = productsFiltered.slice(startIndex, endIndex)
-
-  const endResults = endIndex
-
-  const finished = !(maxResults > endIndex)
-  return {
-    products: paginatedProducts,
-    itensPerPage,
-    pageIndex,
-    finished,
-    maxResults,
-    endResults,
-    startResults: startIndex + 1,
-  }
+  return productsFiltered
 }
 
 function sortProductsByName(products: Product[]): Product[] {
@@ -98,4 +107,16 @@ function sortByPrice(
   if (order === 'desc')
     return products.slice().sort((a, b) => b.price - a.price)
   return products.slice().sort((a, b) => a.price - b.price)
+}
+
+function pagination(
+  products: Product[],
+  pageIndex: number,
+  itensPerPage: number,
+) {
+  const startIndex = (pageIndex - 1) * itensPerPage
+  const endIndex = startIndex + itensPerPage
+  const paginatedProducts = products.slice(startIndex, endIndex)
+
+  return paginatedProducts
 }
