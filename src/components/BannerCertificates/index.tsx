@@ -1,11 +1,6 @@
 import type { ReactNode } from 'react'
 import styles from './index.module.css'
 
-import trophyIcon from '../../assets/icons/trophy.svg'
-import guaranteeIcon from '../../assets/icons/guarantee.svg'
-import shippignIcon from '../../assets/icons/shippign.svg'
-import customerSupportIcon from '../../assets/icons/custumer-support.svg'
-
 interface TitleProps {
   title: string
 }
@@ -58,28 +53,28 @@ function BannerCertificates() {
   return (
     <Root>
       <Card>
-        <Icon src={trophyIcon} />
+        <Icon src="/icons/trophy.svg" />
         <Content>
           <Title title="High Quality" />
           <Description>crafted from top materials</Description>
         </Content>
       </Card>
       <Card>
-        <Icon src={guaranteeIcon} />
+        <Icon src="/icons/guarantee.svg" />
         <Content>
           <Title title="Warranty Protection" />
           <Description>Over 2 years</Description>
         </Content>
       </Card>
       <Card>
-        <Icon src={shippignIcon} />
+        <Icon src="/icons/shippign.svg" />
         <Content>
           <Title title="Free Shipping" />
           <Description>Order over 150 $</Description>
         </Content>
       </Card>
       <Card>
-        <Icon src={customerSupportIcon} />
+        <Icon src="/icons/custumer-support.svg" />
         <Content>
           <Title title="24 / 7 Support" />
           <Description>Dedicated support</Description>

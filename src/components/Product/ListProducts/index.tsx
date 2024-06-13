@@ -18,7 +18,7 @@ export function ColletionProducts({ products }: ColletionProductsProps) {
             )}
             {product.new && !product.priceOld && <ProductCard.NewProduct />}
             <ProductCard.Image
-              url={`src/assets/images/${product.imageUrl}`}
+              url={`/images/${product.imageUrl}`}
               alt="Imagem"
             />
 

@@ -1,5 +1,4 @@
 import { useEffect, useRef, type ReactNode } from 'react'
-import filterIcon from '../../assets/icons/system-uicons:filtering.svg'
 
 import styles from './index.module.css'
 import type { Filters } from '../../pages/Home'
@@ -62,7 +61,11 @@ function FilterDetails({
     <div className={styles.FilterDetailsContainer}>
       <div className={styles.filter}>
         <label htmlFor="filter-select">
-          <img src={filterIcon} alt="" className={styles.filterIcon} />
+          <img
+            src="/icons/system-uicons:filtering.svg"
+            alt=""
+            className={styles.filterIcon}
+          />
         </label>
         <select
           id="filter-select"

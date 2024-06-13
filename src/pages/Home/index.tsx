@@ -1,6 +1,5 @@
 import * as Banner from '../../components/Banner'
-import vectorIcon from '../../assets/icons/vector.svg'
-import imgBanner from '../../assets/images/banner.jpeg'
+
 import * as FilterComponent from '../../components/FilterComponent'
 import { ColletionProducts } from '../../components/Product/ListProducts'
 import { getProducts } from '../../http/get-products'
@@ -54,13 +53,13 @@ export function Home() {
   return (
     <section>
       <Banner.Root>
-        <Banner.Image imageUrl={imgBanner} />
+        <Banner.Image imageUrl="/images/banner.jpeg" />
         <Banner.Content>
           <Banner.Title>Shop</Banner.Title>
           <Banner.Description>
             <span className={`${styles.space} ${styles.strong}`}> Home </span>
             <img
-              src={vectorIcon}
+              src="/icons/vector.svg"
               alt="#"
               className={`${styles.icon} ${styles.strong}`}
             />
