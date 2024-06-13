@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content:center;
   align-items:center;
-  gap: 30px;
+  gap: 100px;
   background-color:#FAF3EA;
   min-height: 270px;
   padding: 50px;
@@ -12,10 +12,8 @@
 
 .card {
   display: flex;
-  flex-direction: row;
   gap: 10px;
   flex: 1;
-  justify-content: center;
 }
 
 .title {
