@@ -74,7 +74,7 @@ function filterProducts(products: Product[], filter: Filters): Product[] {
 
 function sortProductsByName(products: Product[]): Product[] {
   return products.slice().sort((a, b) => {
-    const nameA = a.name.toUpperCase() // Convertendo para maiúsculas para ordenação
+    const nameA = a.name.toUpperCase()
     const nameB = b.name.toUpperCase()
     if (nameA < nameB) {
       return -1
@@ -88,7 +88,7 @@ function sortProductsByName(products: Product[]): Product[] {
 
 function sortProductsDescByName(products: Product[]): Product[] {
   return products.slice().sort((a, b) => {
-    const nameA = a.name.toUpperCase() // Convertendo para maiúsculas para ordenação
+    const nameA = a.name.toUpperCase()
     const nameB = b.name.toUpperCase()
     if (nameA < nameB) {
       return 1
